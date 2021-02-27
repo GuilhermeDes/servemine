@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Navbar*/
+.logotop {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/bgtop.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+.navbar {
+  background-color: teal;
+  color: white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 5px solid rgb(5, 87, 87);
+}
+
+ul {
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+li {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 5px;
+  width: 150px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.vips {
+  margin-top: 50px;
+  display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ margin-bottom: 450px;
+ align-items: center;
+ justify-content: center;
+ width: 900px;
+ height: 950px;
+}
+.mensal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+}
+
+.eterno {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+}
+.unban {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+  width: 350px;
+  margin-bottom: 50px;
+
+}
+.item {
+  background-color: white;
+  width: 250px;
+  height: 320px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 2px 5px gray;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 20px;
+}
+
+.buy {
+  color: white;
+  background-color: green;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  width: 120px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+/*Link*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/*Hover e active*/
+li:hover {
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.buy:hover {
+  color: white;
+  background-color: rgb(8, 107, 8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  width: 120px;
+  height: 50px;
+  margin-top: 15px;
+}
