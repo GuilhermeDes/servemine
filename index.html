@@ -45,43 +45,28 @@
                 Uso excessivo de Caps-lock - Sujeito á mute de 15 minutos (após 2 avisos).
                 Chat-fake - Sujeito á mute de 30 minutos.
                 Mal uso de comandos - Sujeito á mute de 15 minutos (após 2 avisos).
-                Ofensa á jogador - Sujeito á mute de 30 minutos.
-
-
-                - Ações que resultam em banimento temporário no servidor -
-
-                Skin inapropriada - Sujeito á banimento de 2 dias (após 1 aviso).
-                Rastro de Macro/Hack - Sujeito á banimento de 7 dias .
-                Admitir uso de Hack/Macro - Sujeito á banimento de 7 dias.
-                Desinformação : Banimento de 1 dia (após 1 aviso).
-                Falsa acusação : Banimento de 2 dias.
-
-
-                - Ações que geram punição eterna no servidor -
-
-                Difamação ao servidor.
-                Divulgação grave (como ip's de outros servidores, por exemplo).
-                Falsificação de provas.
-                Uso de Hack/Macro.
-                Pedir reembolso.
-                Abuso de bugs graves.
-                Negar tela/deslogar em telamento.
-                Abuso de Contas.
-                Usar contas secundárias para farmar terra.
-                Uso de printer.</p>
+                Ofensa á jogador - Sujeito á mute de 30 minutos.</p>
         </div>
 
         <div class="serve">
             <h1>Servidor</h1>
             <div class="ligado">
-                <p class="modo">SkyBlock </p>
+                <p class="modo">SkyBlock </p><span>/</span>
                 <p class="status">Online</p>
             </div>
-            <a href="download/info.txt" download="Informações"><button class="btnip" >COPIAR IP</button></a>
+            <input type="url" class="btnip" id="url" value="jogar.asteriamc.xyz" readonly=“true” />
             <P class="infob">Clique no botão para copiar o IP.</P>
         </div>
     </section>
-
-</body>
+     <!--CDN JS-->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <!--Script de  Copiar-->
+     <script>
+         $("#url").click(function(){
+           $(this).select();
+           document.execCommand('copy');
+         })
+       </script>
+ </body>
 
 </html>
