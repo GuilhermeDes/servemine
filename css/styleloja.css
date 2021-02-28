@@ -58,14 +58,14 @@ body {
 }
 .vips {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-bottom: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  grid-gap: 1em;
   width: 900px;
-  height: 950px;
+  height: 100%;
 }
 .mensal {
   display: grid;
@@ -102,7 +102,12 @@ body {
   padding: 10px;
   box-shadow: 1px 2px 5px gray;
 }
-
+.tipo {
+  text-align: center;
+  color: gray;
+  font-size: 30px;
+  margin-top: 25px;
+}
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
@@ -157,7 +162,7 @@ li:hover {
   width: 120px;
   height: 50px;
   margin-top: 15px;
-    border-bottom: 4px solid rgb(6, 77, 6);
+  border-bottom: 4px solid rgb(6, 77, 6);
   border-right: 3px solid rgb(6, 77, 6);
 }
 
@@ -232,8 +237,11 @@ li:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    padding: 5px;
     width: 400px;
     height: 100%;
+  }
+
+  .unban .item {
+    margin-top: 10px;
   }
 }
