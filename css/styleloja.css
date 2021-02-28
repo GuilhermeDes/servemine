@@ -94,7 +94,7 @@ body {
 .item {
   background-color: white;
   width: 250px;
-  height: 350px;
+  height: 370px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
