@@ -3,11 +3,15 @@
   padding: 0;
 }
 body {
-  background-color: rgb(219, 219, 219);
+  background-image: url(../img/bgloja1.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*Navbar*/
 .logotop {
@@ -55,13 +59,13 @@ li {
 .vips {
   margin-top: 50px;
   display: grid;
- grid-template-columns: 1fr;
- grid-template-rows: 1fr 1fr 1fr;
- margin-bottom: 450px;
- align-items: center;
- justify-content: center;
- width: 900px;
- height: 950px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 450px;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 950px;
 }
 .mensal {
   display: grid;
@@ -86,7 +90,6 @@ li {
   margin-top: 25px;
   width: 350px;
   margin-bottom: 50px;
-
 }
 .item {
   background-color: white;
@@ -124,6 +127,7 @@ h3 {
   height: 50px;
   margin-top: 15px;
   border-radius: 2px;
+  margin-bottom: 15px;
 }
 
 /*Link*/
@@ -154,4 +158,64 @@ li:hover {
   width: 120px;
   height: 50px;
   margin-top: 15px;
+}
+
+.valor {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: goldenrod;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 70%;
+}
+
+/*Responsivo*/
+@media only screen and (max-device-width: 900px) {
+  /*Navbar*/
+
+  ul {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  li {
+    width: 110px;
+  }
+  /*Loja*/
+  .vips {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+  }
+  .mensal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5px;
+    align-items: center;
+  }
+
+  .eterno {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5px;
+  }
+  .unban {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1em;
+    margin-top: 5px;
+  }
 }
