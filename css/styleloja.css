@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url(../img/bgloja1.jpg);
+  background-image: url(../img/bglojabeneficio.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,11 +84,11 @@ body {
 }
 .unban {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 1em;
   margin-top: 25px;
-  width: 350px;
+  width: 900px;
   margin-bottom: 50px;
 }
 .item {
@@ -164,6 +164,7 @@ li:hover {
   margin-top: 15px;
   border-bottom: 4px solid rgb(6, 77, 6);
   border-right: 3px solid rgb(6, 77, 6);
+  cursor: pointer;
 }
 
 .valor {
