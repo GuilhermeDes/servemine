@@ -178,6 +178,7 @@ span {
   box-shadow: 1px 1px 5px white;
   z-index: +2;
   display: block;
+  animation: scale 1s linear;
 }
 
 .popup p {
@@ -257,7 +258,25 @@ li:hover {
   border-right: 0px solid rgb(5, 87, 87);
   font-size: 20px;
 }
+/*Animação do popup*/
+@keyframes scale {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  75% {
+    transform: scale(1.1);
+  }
 
+  100% {
+    transform: scale(1);
+  }
+}
 /*Responsivo*/
 @media only screen and (max-device-width: 900px) {
   /*Navbar*/
