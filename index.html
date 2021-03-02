@@ -37,15 +37,16 @@
 
     <section class="main">
         <div class="sobre">
-            <h1 style="margin-top: 35px;">- Ações que resultam em mute no servidor -</h1>
+            <h1 style="margin-top: 35px;">Bem Vindo a ArteriaMC</h1>
 
 
-            <p style="margin: 100px; margin-top: 30px;">Flood/spam - Sujeito á mute de 15 minutos (após 2 avisos).
-                Divulgação simples - Mute de 15 minutos.
-                Uso excessivo de Caps-lock - Sujeito á mute de 15 minutos (após 2 avisos).
-                Chat-fake - Sujeito á mute de 30 minutos.
-                Mal uso de comandos - Sujeito á mute de 15 minutos (após 2 avisos).
-                Ofensa á jogador - Sujeito á mute de 30 minutos.</p>
+            <p class="texto">Aqui você encontra a maior imersão que você ja viu, temos 2 modos disponivel: o SkyBlock e
+                o RankUP.</p>
+
+            <iframe width="450" height="250" style="margin-top: 20px;" src="https://www.youtube.com/embed/FvtHaK3qNkE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
         <div class="serve">
@@ -53,20 +54,38 @@
             <div class="ligado">
                 <p class="modo">SkyBlock </p><span>/</span>
                 <p class="status">Online</p>
+                <p class="modo">RankUP </p><span>/</span>
+                <p class="status">Online</p>
             </div>
             <input type="url" class="btnip" id="url" value="jogar.asteriamc.xyz" readonly=“true” />
             <P class="infob">Clique no botão para copiar o IP.</P>
         </div>
     </section>
-     <!--CDN JS-->
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <!--Script de  Copiar-->
-     <script>
-         $("#url").click(function(){
-           $(this).select();
-           document.execCommand('copy');
-         })
-       </script>
- </body>
+  <div class="pop">
+    <div id="popup" class="popup">
+        <button class="closed" onclick="fechar()"><i class="fas fa-times"></i></button>
+        <img src="img/logotop.png" style="width: 150px; height: 150px;">
+        <h1>Promoção</h1>
+        <p>Hoje estamos tendo promoção em nossos Vips. Basta ir na loja para conferir a promoções imperdiveis!</p>
+        <a href="loja.html"><button class="btnverificar">Verificar!</button></a>		
+    </div>
+    <div class="opaco" id="pop"></div>
+    <!--CDN JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script>
+        /*Script POP*/
+        function fechar() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('pop').style.display = 'none';
+        }
+        /*Scrpit de copiar ip*/
+        $("#url").click(function () {
+            $(this).select();
+            document.execCommand('copy');
+        })
+
+    </script>
+</body>
 
 </html>
